@@ -1,13 +1,13 @@
-package com.example.demo;
+package com.crud.product;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootCrudProduct1Application {
+public class SpringBootCrudProductApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootCrudProduct1Application.class, args);
+		SpringApplication.run(SpringBootCrudProductApplication.class, args);
 	}
 
 }
