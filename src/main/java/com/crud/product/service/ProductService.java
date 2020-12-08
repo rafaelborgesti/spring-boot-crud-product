@@ -21,5 +21,10 @@ public class ProductService {
 	public List<Product> saveProducts(List<Product> products) {
 		return repository.saveAll(products);
 	}
+	
+	public String deleteProduct(int id) {
+        repository.deleteById(id);
+        return "Product deleted! " + id;
+    }
 
 }
