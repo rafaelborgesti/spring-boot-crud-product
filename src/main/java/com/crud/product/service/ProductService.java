@@ -34,5 +34,17 @@ public class ProductService {
         hasProduct.setPrice(product.getPrice());
         return repository.save(hasProduct);
     }
+	
+	public List<Product> getProducts() {
+        return repository.findAll();
+    }
+
+    public Product getProductById(int id) {
+        return repository.findById(id).orElse(null);
+    }
+
+    public Product getProductByName(String name) {
+        return repository.findByName(name);
+    }
 
 }
